@@ -1,10 +1,12 @@
-import AccessoriesImage from "@/images/accessories.jpg";
-import ApparelImage from "@/images/apparel.jpg";
+import ComplementosImage from "@/images/complementos.webp";
+import PlantasImage from "@/images/plantas.webp";
+import RamosImage from "@/images/ramos.webp";
 
 export const config = {
 	categories: [
-		{ name: "Apparel", slug: "apparel", image: ApparelImage },
-		{ name: "Accessories", slug: "accessories", image: AccessoriesImage },
+		{ name: "Ramos", slug: "ramos", image: RamosImage },
+		{ name: "Plantas", slug: "plantas", image: PlantasImage },
+		{ name: "Complementos", slug: "complementos", image: ComplementosImage },
 	],
 
 	social: {
