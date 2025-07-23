@@ -1,3 +1,4 @@
+import CentrosImage from "@/images/centros.webp";
 import ComplementosImage from "@/images/complementos.webp";
 import PlantasImage from "@/images/plantas.webp";
 import RamosImage from "@/images/ramos.webp";
@@ -6,6 +7,7 @@ export const config = {
 	categories: [
 		{ name: "Ramos", slug: "ramos", image: RamosImage },
 		{ name: "Plantas", slug: "plantas", image: PlantasImage },
+		{ name: "Centros", slug: "centros", image: CentrosImage },
 		{ name: "Complementos", slug: "complementos", image: ComplementosImage },
 	],
 

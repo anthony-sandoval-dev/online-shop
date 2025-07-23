@@ -17,7 +17,7 @@ export async function CategoryBox({
 			<div className="relative overflow-hidden rounded-lg">
 				<Image
 					alt="Cover image"
-					className="w-full scale-105 object-cover transition-all group-hover:scale-100 group-hover:opacity-75 max-h-80"
+					className="w-full scale-105 object-cover transition-all group-hover:scale-100 group-hover:opacity-75 h-80"
 					sizes="(max-width: 1024x) 100vw, (max-width: 1280px) 50vw, 620px"
 					src={src}
 				/>

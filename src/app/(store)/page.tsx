@@ -17,7 +17,7 @@ export default async function Home() {
 
 	return (
 		<main>
-			<section className="rounded py-8 sm:py-12 bg-[url('/images/hero-img.webp')] bg-cover bg-center">
+			<section className="rounded py-8 sm:py-12 bg-[url('/images/hero.webp')] bg-cover bg-center h-96">
 				<div className="mx-auto grid grid-cols-1 items-center justify-items-center gap-8 px-8 sm:px-16 md:grid-cols-2">
 					<div className="max-w-md space-y-4">
 						<h2 className="text-balance text-3xl font-bold tracking-tight md:text-4xl">{t("hero.title")}</h2>
@@ -32,8 +32,6 @@ export default async function Home() {
 				</div>
 			</section>
 
-			<ProductList products={products} />
-
 			<section className="w-full py-8">
 				<div className="grid gap-8 lg:grid-cols-2">
 					{StoreConfig.categories.map(({ slug, image: src }) => (
@@ -41,6 +39,8 @@ export default async function Home() {
 					))}
 				</div>
 			</section>
+
+			<ProductList products={products} />
 		</main>
 	);
 }
