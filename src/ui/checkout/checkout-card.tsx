@@ -1,25 +1,19 @@
 import { getLocale, getTranslations } from "@/i18n/server";
-import amex from "@/images/payments/amex.svg";
-import blik from "@/images/payments/blik.svg";
+import apple_pay from "@/images/payments/apple_pay.svg";
 import google_pay from "@/images/payments/google_pay.svg";
-import klarna from "@/images/payments/klarna.svg";
-import link from "@/images/payments/link.svg";
 import mastercard from "@/images/payments/mastercard.svg";
-import p24 from "@/images/payments/p24.svg";
+import revolut from "@/images/payments/revolut.svg";
 import visa from "@/images/payments/visa.svg";
 import { isDefined } from "@/lib/utils";
 import { StripePayment } from "@/ui/checkout/stripe-payment";
 import * as Commerce from "commerce-kit";
 
 export const paymentMethods = {
-	amex,
-	blik,
 	google_pay,
-	klarna,
-	link,
 	mastercard,
-	p24,
 	visa,
+	revolut,
+	apple_pay,
 };
 
 export const CheckoutCard = async ({ cart }: { cart: Commerce.Cart }) => {
